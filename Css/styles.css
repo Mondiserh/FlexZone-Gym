@@ -1,10 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0;
     padding:0;
     background-color: #000000;
     color: #FCFCFC;
-    font-family: Poppins;
-    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 header{
@@ -14,17 +16,17 @@ header{
     background-position: center;
 }
 /* START OF Navbar */
-h2{
-    font-family: Poppins;
-    font-weight: 700;
-    font-size:24px;
-    text-transform: uppercase;
-}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:40px 10% 0;
+}
+
+.gym-name{
+    font-weight: 700;
+    font-size:24px;
+    text-transform: uppercase;
 }
 
 nav ul li{
@@ -40,18 +42,18 @@ nav ul li a{
     line-height: 24px;
     text-decoration: none;
 }
-.logo{
+.gym-logo{
     display: flex;
     align-items: center;
 }
 
 .logo-image{
     width: 40px;
-    height: 40px;
+    height: auto;
     padding-bottom: 13px;
 }
 
-.media-icons{
+.social-media{
     color:#FCFCFC;
     font-size: 24px;
 }
@@ -69,8 +71,6 @@ nav ul li:hover{
     color:#55C5E9;
     transition: 3s;
 }
-
-
 /* ----END OF Navbar */
 
 /* START OF Home Page */
@@ -142,13 +142,24 @@ h1{
 /* About us */
 .About-us{
     display: flex;
-    padding:100px 150px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 160px 140px 156px 140px ;
+
 }
 
 .about-info{
-    padding-right:150px;
+    width: 544px;
+    height: 336px;
+    margin-top:10px;
 
+}
+
+.image1{
+    width: 485px;
+    height: 515px;
+    border-radius: 8px;
+    margin-left: 91px;
 }
 
 .About-us p{
@@ -157,6 +168,7 @@ h1{
     font-size: 16px;
     line-height: 24px;
     color: rgba(252, 252, 252, 0.8);
+    margin-bottom:30px;
 }
 
 .About-us h3{
@@ -178,12 +190,117 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 30px;
-/* identical to box height */
-
+padding: 0;
+margin: 0;
 letter-spacing: -0.02em;
 text-transform: uppercase;
-
-/* Accent Color */
-
 color: #55C5E9;
+}
+
+.fa-right-long{
+    color: #55C5E9;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.about-info a{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color:#FCFCFC;
+}   
+
+.about-info a:hover{
+    color:#55C5E9;
+    transition: 3s;
+}
+
+.fa-right-long:hover{
+    font-size:15px;
+}
+
+/* ABOUT US END */
+
+/* WHY CHOOSE US START */
+
+.Why-us{
+    margin-left:140px;
+    padding-bottom: 156px;
+}
+
+.reasons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:72px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.textbox{
+    width: 408px;
+    height: 168px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.fa-dumbbell{
+    font-size: 40px;
+    transform: rotate(145deg);
+    margin-right:50px;
+    margin-bottom :160px;
+    color: #55C5E9;
+    
+}
+.reason{
+    display:flex;
+    
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 500px;
+
+}
+
+.Why-us h3{
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 81px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    margin: 0;
+padding-bottom: 50px;
+}
+
+.Why-us h4{
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #55C5E9;
+margin: 0;
+padding: 0;
+}
+
+.Why-us h5{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    padding: 0;
+    margin: 0;
+}
+
+.Why-us p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: rgba(252, 252, 252, 0.8);
 }
